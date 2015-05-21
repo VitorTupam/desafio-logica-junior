@@ -1,0 +1,59 @@
+Nome: Vitor Tupam
+Questões
+1.	Você tem 8 moedas e todas tem o mesmo peso exceto uma, que é um pouco mais pesada que as demais. Você também possui uma balança que permite pesar duas pilhas de moedas para descobrir qual é a mais pesada (ou de mesmo peso). Qual é o mínimo número de combinações para serem feitas para descobrir qual a moeda mais pesada?
+R:  Usando um método de divisão, conseguimos achar a moeda mais pesada em 3 movimentos.
+2.	Assuma um cubo semelhante ao do desenho abaixo, no entanto com 8 mini cubos em cada aresta. Se pintarmos todas as suas faces, quantos mini cubos terão pelo menos uma face pintada?
+ 
+
+R:  12 arestas * 8 mini cubos = 96 com pelo menos 1 face pintada.
+1.	Dado um array de inteiros ordenados, como encontrar a posição de determinado valor?
+algoritmo "Achar a posição do array"
+// Função :  Acha o maior numero do vetor aleatório
+// Autor :  Vitor Tupam
+// Data : 20/05/2015
+// Seção de Declarações
+var
+i, aux, achar,seq: inteiro
+range : vetor [1..10] de inteiro
+
+inicio
+// Seção de Comandos
+escreva ("Em qual numero a sequencia começa: ")
+leia (seq)
+escreva ("Em qual numero procurar: ")
+leia (achar)
+
+para i de 1 ate 10 faca
+
+    escreval (seq)
+    seq <- seq +1
+    range[i] <- seq
+
+            Se seq = achar entao
+            aux <- i
+            fimse
+
+fimpara
+   escreval("")
+   escreva("A posição do numero é =", aux, " , partindo da posição 0")
+   escreval("")
+fimalgoritmo
+2.	Escreva um código para reverter uma string
+algoritmo "Reverter String"
+// Função :  Inverte uma palavra escrita 
+// Autor : Vitor Tupam
+// Data : 19/05/2015
+// Seção de Declarações
+var
+nome, nomeinvertido: caracter
+tamanhonome,i: inteiro
+
+inicio
+escreva ("Escreva seu nome: ")
+leia (nome)
+tamanhonome <- compr(nome)
+para i de tamanhonome ate 1 passo -1 faca
+nomeinvertido <- nomeinvertido + copia(nome,i,1)
+fimpara
+escreval ("Nome invertido: ", nomeinvertido)
+fimalgoritmo
